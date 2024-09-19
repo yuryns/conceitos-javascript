@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console e Windows</title>
+
+    <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <H1>Olá Mundo</H1>
+    <p>Vencemos o início</p>
+
+    <!-- Javascript -->
+     <script>
+        //exibe a mensagem no console.
+        // window.alert() exibe uma caixa de diálogo simples com uma mensagem e um botão "ok".
+        window.alert("Que inicie os jogos!!")
+
+        //O window.pront() solicita uma entrada de dados do usuário, exibindo uma caixa de texto.
+        let nome = window.prompt("Qual é o seu nome? ");
+
+        // inserida uma váriavel let ( valor alterável)
+        console.log("Nome informado: "+nome);
+      
+        // window.setTimeout() execulta uma função após um intervalo de tempo definido (dm milissegundos).
+        window.setTimeout(function(){
+            console.log("executando após 2 segundos")
+        }, 2000); // 2000 milissegundos = 2 segundos
+
+        window.confirm("estão entendendo?");
+
+        window.open() //abre uma nova janela ou aba com o url especificado.
+        
+        window.open("https://www.google.com", "_blank");
+
+        //ele irá fechar a janela atual 
+       // window.close()
+
+
+        // executar uma repetidamente
+        window.setInterval(function(){
+            window.clearInterval(intervalID);
+
+        });
+
+        //manipulação do scroll
+        window,scroll(x,y);
+
+        // Volta para a página anterior no histórico
+        window.history.back();
+
+        // Volta para a página seguinte
+        window.history.formard();
+
+        // XY páginas a frente
+        window.history.go(2);// determinado duas frente
+
+        // Redireciona para outro site
+        window.location.href = "https://www.wikipedia.org";
+        
+
+     </script>
+
+    
+</body>
+</html>
